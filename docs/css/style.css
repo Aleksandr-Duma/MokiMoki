@@ -3350,7 +3350,6 @@ button {
 
 @media (max-width: 520px) {
   .about-slider__nav {
-    min-height: 40px;
     font-size: 22px;
     left: 50%;
   }
@@ -3359,15 +3358,14 @@ button {
 .about-slider__nav-text {
   display: inline-block;
   font-size: 30px;
-  line-height: 1;
+  line-height: 1.2;
   color: #FBB000;
   text-align: center;
-  margin-bottom: 5px;
 }
 
 .about-slider__nav-button {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: transparent;
   border: none;
@@ -3379,7 +3377,7 @@ button {
 .about-slider__nav-left::after {
   content: "‹";
   font-size: 54px;
-  line-height: 0.4;
+  line-height: 0.8;
   color: #FBB000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3395,7 +3393,7 @@ button {
 .about-slider__nav-right::after {
   content: "›";
   font-size: 54px;
-  line-height: 0.4;
+  line-height: 0.8;
   color: #FBB000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4259,7 +4257,7 @@ button {
 
 @media (max-width: 640px) {
   .portfolio-galery__nav {
-    min-height: 45px;
+    min-height: 50px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -4271,7 +4269,6 @@ button {
   line-height: 1;
   color: #0F0F0F;
   text-align: center;
-  margin-bottom: 7px;
 }
 
 @media (max-width: 640px) {
@@ -4291,14 +4288,14 @@ button {
 
 @media (max-width: 640px) {
   .portfolio-galery__nav-button {
-    min-height: 4px;
+    height: 50px;
   }
 }
 
 .portfolio-galery__nav-left::after {
   content: "‹";
   font-size: 94px;
-  line-height: 0.35;
+  line-height: 0.6;
   color: #0F0F0F;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4320,7 +4317,7 @@ button {
 .portfolio-galery__nav-right::after {
   content: "›";
   font-size: 94px;
-  line-height: 0.35;
+  line-height: 0.6;
   color: #0F0F0F;
   display: -webkit-box;
   display: -ms-flexbox;
