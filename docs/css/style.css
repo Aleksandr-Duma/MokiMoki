@@ -537,6 +537,77 @@ button {
   margin: 0 auto;
 }
 
+.running-line {
+  width: 100%;
+  height: 70px;
+  background-color: #FBB000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 990px) {
+  .running-line {
+    height: 60px;
+  }
+}
+
+@media (max-width: 620px) {
+  .running-line {
+    height: 50px;
+  }
+}
+
+.running-line__text {
+  display: inline-block;
+  font-weight: 500;
+  font-family: 'Hopscotch';
+  font-size: 54px;
+  color: #0F0F0F;
+  white-space: nowrap;
+  text-shadow: 2px 2px 0px #fff;
+  -webkit-animation: animation-running 180s infinite linear alternate;
+  animation: animation-running 180s infinite linear alternate;
+}
+
+@media (max-width: 990px) {
+  .running-line__text {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 620px) {
+  .running-line__text {
+    font-size: 40px;
+  }
+}
+
+@-webkit-keyframes animation-running {
+  from {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes animation-running {
+  from {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+  }
+}
+
 @-webkit-keyframes blinker {
   0% {
     opacity: 0.3;
@@ -6886,8 +6957,8 @@ button {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  color: #FDB604;
-  text-shadow: 0 0 20px #FDB604;
+  color: #FBB000;
+  text-shadow: 0 0 20px #FBB000;
   border: none;
   outline: none;
   background-color: transparent;
@@ -8018,6 +8089,12 @@ button {
   .footer {
     padding-top: 130px;
   }
+}
+
+.footer .running-line {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer__content {
