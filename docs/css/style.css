@@ -497,6 +497,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #fff;
+  background-color: #0F0F0F;
 }
 
 img {
@@ -3971,39 +3972,56 @@ button {
 
 /*-------------------portfolio----------------*/
 .portfolio {
-  background-image: url(../img/portfolio-bg-2.png);
+  background-image: url(../img/portfolio-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding-top: 110px;
-  padding-bottom: 178px;
   position: relative;
-  margin-top: -122px;
-  z-index: 20;
-}
-
-@media (max-width: 1240px) {
-  .portfolio {
-    padding-bottom: 220px;
-  }
+  padding: 60px 0 120px 0;
 }
 
 @media (max-width: 990px) {
   .portfolio {
-    padding-top: 90px;
-    padding-bottom: 160px;
+    padding: 40px 0 70px 0;
   }
 }
 
 @media (max-width: 640px) {
   .portfolio {
-    padding-top: 50px;
-    padding-bottom: 120px;
+    padding: 40px 0 30px 0;
   }
+}
+
+.portfolio .running-line__top {
+  width: 110%;
+  position: absolute;
+  top: -35px;
+  left: -5%;
+  -webkit-transform: rotate(-1.6deg);
+  -ms-transform: rotate(-1.6deg);
+  transform: rotate(-1.6deg);
+  z-index: 20;
+}
+
+.portfolio .running-line__bottom {
+  width: 110%;
+  position: absolute;
+  left: -5%;
+  bottom: -35px;
+  -webkit-transform: rotate(-1.6deg);
+  -ms-transform: rotate(-1.6deg);
+  transform: rotate(-1.6deg);
+  z-index: 20;
 }
 
 .portfolio__inner {
   padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .portfolio__inner {
+    padding-top: 40px;
+  }
 }
 
 .portfolio-title {
@@ -4037,7 +4055,7 @@ button {
 
 .portfolio-yellow {
   color: #FBB000;
-  text-shadow: 2px 3px 0px #f1f1f1, 5px 5px 0px #0f0f0f;
+  text-shadow: 2px 3px 0px #f1f1f1, 5px 5px 0px #0F0F0F;
 }
 
 @media (max-width: 1240px) {
@@ -4084,7 +4102,7 @@ button {
   flex-wrap: wrap;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1240px) {
   .portfolio-galery__head-more {
     display: none;
   }
@@ -4288,7 +4306,7 @@ button {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-top: 40px;
+  margin: 40px 0 20px 0;
 }
 
 .portfolio-galery__nav {
@@ -4378,7 +4396,6 @@ button {
   padding-bottom: 275px;
   overflow: hidden;
   position: relative;
-  margin-top: -72px;
   z-index: 19;
 }
 
